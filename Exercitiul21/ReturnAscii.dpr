@@ -11,6 +11,6 @@ begin
   Writeln('Introduceti un caracter: ');
   Readln(Input, vChr);
   Writeln(Ord(vChr));
+  //sau folosim typecast Integer(vChr)
   Readln(Input);
 end.
- 
