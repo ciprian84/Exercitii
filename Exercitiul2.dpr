@@ -1,4 +1,4 @@
-program ArieDreptunghi;
+program Exercitiul2;
 
 {$APPTYPE CONSOLE}
 
