@@ -14,7 +14,7 @@ begin
  Readln(Input, vNrKWOra);
  Writeln('Introduceti costul unui KW-Ora');
  Readln(Input, vCostKWOra);
- vCostAnualCurent := vNrKWOra * vCostKWOra * 60;
+ vCostAnualCurent := vNrKWOra * vCostKWOra;
  Writeln('Costul anual al consumului de curent: '+ FloatToStr(vCostAnualCurent));
  Readln;
 end.
