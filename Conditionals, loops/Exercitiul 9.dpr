@@ -3,9 +3,7 @@ program Exercitiul9;
 {$APPTYPE CONSOLE}
 
 uses
-  SysUtils,
-  Math;
-
+  SysUtils;
 var
   vCoordX, vCoordY: Double;
 const
