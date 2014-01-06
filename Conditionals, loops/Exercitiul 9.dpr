@@ -5,18 +5,18 @@ program Exercitiul9;
 uses
   SysUtils;
 var
-  vCoordX, vCoordY: Double;
+  vCoordX, vCoordY: integer;
 const
-  cLungimeDreptunghi = 5;
-  cLatimeDreptungi = 5;
+  cStopPoint = 5;
+  cStartPoint = 1;
 resourcestring
-  msgPunctInInteriorulDreptunghiului = 'Punctul (%f,%f) %s se afla in interiorul dreptunghiului';
+  msgPunctInInteriorulDreptunghiului = 'Punctul (%d,%d) %s se afla in interiorul dreptunghiului';
 begin
   Writeln('Introduceti coordonata X a punctului:');
   Readln(vCoordX);
   Writeln('Introduceti coordonata Y a punctului:');
   Readln(vCoordY);
-  if (vCoordX <= cLungimeDreptunghi) and (vCoordY <= cLatimeDreptungi) then
+  if (vCoordX in [cStartPoint..cStopPoint]) and (vCoordY in [cStartPoint..cStopPoint]) then
     Writeln(Format(msgPunctInInteriorulDreptunghiului, [vCoordX, vCoordY, '']))
   else
     Writeln(Format(msgPunctInInteriorulDreptunghiului, [vCoordX, vCoordY, ' NU']));
